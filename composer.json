@@ -1,0 +1,33 @@
+{
+	"name": "brightnucleus/testbed",
+	"description": "Testing grounds for the different Bright Nucleus components.",
+	"version": "0.1.0",
+	"type": "wordpress-plugin",
+	"homepage": "https://www.brightnucleus.com/",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "Alain Schlesser",
+			"homepage": "https://www.brightnucleus.com/",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"issues": "https://www.github.com/brightnucleus/testbed/issues"
+	},
+	"autoload": {
+		"psr-4": {
+			"BrightNucleus\\Testbed\\": "src/"
+		}
+	},
+	"require": {
+		"composer/installers": "^1.0",
+		"brightnucleus/config": "^0.2",
+		"brightnucleus/dependencies": "^0.2",
+		"brightnucleus/shortcodes": "^0.2",
+		"beberlei/assert": "~2.4"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "~4.8"
+	}
+}
