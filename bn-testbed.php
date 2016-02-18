@@ -32,7 +32,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 if ( ! defined( 'BN_TESTBED_DIR' ) ) {
-	define( 'BN_TESTBED_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
+	define( 'BN_TESTBED_DIR', plugin_dir_path( __FILE__ ) );
 }
 
 // Load Composer autoloader.

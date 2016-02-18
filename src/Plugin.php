@@ -11,10 +11,13 @@
 
 namespace BrightNucleus\Testbed;
 
+use BrightNucleus\Config\Config;
 use BrightNucleus\Config\ConfigInterface;
 use BrightNucleus\Config\ConfigTrait;
 use BrightNucleus\Dependency\DependencyManager;
+use BrightNucleus\Exception\BadMethodCallException;
 use BrightNucleus\Exception\InvalidArgumentException;
+use BrightNucleus\Exception\OutOfRangeException;
 use BrightNucleus\Exception\RuntimeException;
 use BrightNucleus\Exception\UnexpectedValueException;
 use BrightNucleus\Shortcode\ShortcodeManager;
@@ -89,6 +92,8 @@ class Plugin {
 	 * @throws InvalidArgumentException
 	 * @throws RuntimeException
 	 * @throws UnexpectedValueException
+	 * @throws BadMethodCallException
+	 * @throws OutOfRangeException
 	 */
 	public function init_shortcodes() {
 
