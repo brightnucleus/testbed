@@ -11,7 +11,6 @@
 
 namespace BrightNucleus\Testbed;
 
-use BrightNucleus\Config\Config;
 use BrightNucleus\Config\ConfigInterface;
 use BrightNucleus\Config\ConfigTrait;
 use BrightNucleus\Dependency\DependencyManager;
@@ -110,7 +109,8 @@ class Plugin {
 			$dependencies
 		);
 		// Register shortcodes.
-		add_action( 'init', [ $shortcodes, 'register' ], 99, 1 );
+		add_action( 'init',
+			function () use ( &$shortcodes ) { $shortcodes->register( [ 'data_passed_from' => 'Plugin_class' ] ); },
+			99 );
 	}
-
 }

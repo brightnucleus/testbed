@@ -1,7 +1,6 @@
 {
 	"name": "brightnucleus/testbed",
 	"description": "Testing grounds for the different Bright Nucleus components.",
-	"version": "0.1.0",
 	"type": "wordpress-plugin",
 	"homepage": "https://www.brightnucleus.com/",
 	"license": "GPL-2.0+",
@@ -20,11 +19,13 @@
 			"BrightNucleus\\Testbed\\": "src/"
 		}
 	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
 	"require": {
 		"composer/installers": "^1.0",
 		"brightnucleus/config": "^0.2",
 		"brightnucleus/dependencies": "^0.2",
-		"brightnucleus/shortcodes": "^0.2",
+		"brightnucleus/shortcodes": "dev-master",
 		"beberlei/assert": "~2.4"
 	},
 	"require-dev": {

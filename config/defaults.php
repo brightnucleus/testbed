@@ -40,15 +40,20 @@ $dependencies = [
 
 $shortcodes = [
 	'bn_test_shortcode' => [
-		'is_needed' => function ( $context ) { return true; },
-		'view'      => BN_TESTBED_DIR . 'views/shortcodes/bn-test-shortcode.php',
-		'atts'      => [
+		'custom_class' => 'BrightNucleus\Shortcode\TemplatedShortcode',
+		'template' => [
+			'filter_prefix' => 'bn_testbed_shortcodes',
+		    'template_directory' => 'templates/bn-testbed-shortcodes',
+		],
+		'is_needed'    => function ( $context ) { return true; },
+		'view'         => BN_TESTBED_DIR . 'views/shortcodes/bn-test-shortcode.php',
+		'atts'         => [
 			'number' => [
 				'validate' => function ( $att ) { return isset( $att ) ? esc_attr( $att ) : null; },
 				'default'  => '3',
 			],
 		],
-		'ui'        => [
+		'ui'           => [
 			'label'         => __( 'Bright Nucleus Testbed - Test Shortcode',
 				'bn-testbed' ),
 			'listItemImage' => 'dashicons-info',
