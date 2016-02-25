@@ -49,6 +49,7 @@ $shortcodes = [
 		'view'         => BN_TESTBED_DIR . 'views/shortcodes/bn-test-shortcode.php',
 		'dependencies' => [
 			'bn-testing-ace',
+		    'jquery-ui-core'
 		],
 		'atts'         => [
 			'number' => [

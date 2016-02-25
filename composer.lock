@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c81129da910615d6e1140049a20499ca",
+    "hash": "7e3b671e8d70e26a1582d3a8cbc52086",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -139,16 +139,16 @@
         },
         {
             "name": "brightnucleus/dependencies",
-            "version": "v0.2.1",
+            "version": "v0.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brightnucleus/dependencies.git",
-                "reference": "f8ab54c2bd52def6529e22b1194e52e1309adf37"
+                "reference": "b805a7df255d4eb3aa4dbc00a4a82f7e38f34088"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brightnucleus/dependencies/zipball/f8ab54c2bd52def6529e22b1194e52e1309adf37",
-                "reference": "f8ab54c2bd52def6529e22b1194e52e1309adf37",
+                "url": "https://api.github.com/repos/brightnucleus/dependencies/zipball/b805a7df255d4eb3aa4dbc00a4a82f7e38f34088",
+                "reference": "b805a7df255d4eb3aa4dbc00a4a82f7e38f34088",
                 "shasum": ""
             },
             "require": {
@@ -180,7 +180,7 @@
                 }
             ],
             "description": "Config-driven WordPress dependencies.",
-            "time": "2016-02-18 10:34:13"
+            "time": "2016-02-25 13:16:03"
         },
         {
             "name": "brightnucleus/exceptions",
@@ -261,16 +261,16 @@
         },
         {
             "name": "brightnucleus/shortcodes",
-            "version": "dev-master",
+            "version": "v0.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brightnucleus/shortcodes.git",
-                "reference": "c4577d2325d7bfc378ae149e277cc10f3f3a8625"
+                "reference": "934aaabb3162e835cc1358534746e7083a33b6a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brightnucleus/shortcodes/zipball/c4577d2325d7bfc378ae149e277cc10f3f3a8625",
-                "reference": "c4577d2325d7bfc378ae149e277cc10f3f3a8625",
+                "url": "https://api.github.com/repos/brightnucleus/shortcodes/zipball/934aaabb3162e835cc1358534746e7083a33b6a3",
+                "reference": "934aaabb3162e835cc1358534746e7083a33b6a3",
                 "shasum": ""
             },
             "require": {
@@ -306,7 +306,7 @@
                 }
             ],
             "description": "Config-driven WordPress shortcodes.",
-            "time": "2016-02-24 05:47:47"
+            "time": "2016-02-25 13:12:35"
         },
         {
             "name": "composer/installers",
@@ -1461,9 +1461,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "brightnucleus/shortcodes": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
