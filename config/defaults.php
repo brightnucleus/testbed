@@ -41,12 +41,15 @@ $dependencies = [
 $shortcodes = [
 	'bn_test_shortcode' => [
 		'custom_class' => 'BrightNucleus\Shortcode\TemplatedShortcode',
-		'template' => [
-			'filter_prefix' => 'bn_testbed_shortcodes',
-		    'template_directory' => 'templates/bn-testbed-shortcodes',
+		'template'     => [
+			'filter_prefix'      => 'bn_testbed_shortcodes',
+			'template_directory' => 'templates/bn-testbed-shortcodes',
 		],
 		'is_needed'    => function ( $context ) { return true; },
 		'view'         => BN_TESTBED_DIR . 'views/shortcodes/bn-test-shortcode.php',
+		'dependencies' => [
+			'bn-testing-ace',
+		],
 		'atts'         => [
 			'number' => [
 				'validate' => function ( $att ) { return isset( $att ) ? esc_attr( $att ) : null; },

@@ -98,7 +98,8 @@ class Plugin {
 
 		// Initialize dependencies.
 		$dependencies = new DependencyManager(
-			$this->config->getSubConfig( 'DependencyManager' )
+			$this->config->getSubConfig( 'DependencyManager' ),
+			false // Don't enqueue all dependencies immediately.
 		);
 		// Register dependencies.
 		add_action( 'init', [ $dependencies, 'register' ], 99, 1 );
