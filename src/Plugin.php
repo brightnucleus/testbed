@@ -33,12 +33,12 @@ class Plugin {
 
 	use ConfigTrait;
 
-	/*
+	/**
 	 * Static instance of the plugin.
 	 *
 	 * @since 0.1.0
 	 *
-	 * @var \BrightNucleus\Testbed\Plugin
+	 * @var self
 	 */
 	protected static $instance;
 
@@ -61,11 +61,12 @@ class Plugin {
 	 * Get a reference to the Plugin instance.
 	 *
 	 * @since 0.1.0
+	 * 
+	 * @throws RuntimeException If the Config could not be parsed correctly.
 	 *
 	 * @param ConfigInterface $config Optional. Config to parametrize the
 	 *                                object.
-	 * @return \BrightNucleus\Testbed\Plugin
-	 * @throws RuntimeException If the Config could not be parsed correctly.
+	 * @return self
 	 */
 	public static function get_instance( ConfigInterface $config = null ) {
 		if ( ! self::$instance ) {
