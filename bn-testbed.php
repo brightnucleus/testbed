@@ -36,11 +36,13 @@ if ( ! defined( 'BN_TESTBED_DIR' ) ) {
 }
 
 // Load Composer autoloader.
-if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
-	require_once __DIR__ . '/vendor/autoload.php';
+if ( file_exists( BN_TESTBED_DIR . '/vendor/autoload.php' ) ) {
+	require_once BN_TESTBED_DIR . '/vendor/autoload.php';
 }
 
 // Initialize the plugin.
-$config = new Config( include __DIR__ . '/config/defaults.php' );
-$prefix = 'BrightNucleus\Testbed';
-Testbed::get_instance( $config->getSubConfig( $prefix ) )->run();
+$config = ConfigFactory::createSubConfig(
+	BN_TESTBED_DIR . '/config/defaults.php'
+	__NAMESPACE__
+);
+( new Testbed( $config ) )->register();
