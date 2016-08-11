@@ -23,10 +23,10 @@
 	"prefer-stable": true,
 	"require": {
 		"composer/installers": "^1.0",
-		"brightnucleus/config": "^0.2",
-		"brightnucleus/dependencies": "^0.2",
-		"brightnucleus/shortcodes": "^0.2",
-		"beberlei/assert": "~2.4"
+		"brightnucleus/config": ">=0.2",
+		"brightnucleus/dependencies": ">=0.2",
+		"brightnucleus/shortcodes": ">=0.2",
+		"brightnucleus/custom-content": "^0.1.1"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.8"
