@@ -23,7 +23,7 @@
 
 namespace BrightNucleus\Testbed;
 
-use BrightNucleus\Config\Config;
+use BrightNucleus\Config\ConfigFactory;
 use BrightNucleus\Testbed\Plugin as Testbed;
 
 // If this file is called directly, abort.
@@ -42,7 +42,7 @@ if ( file_exists( BN_TESTBED_DIR . '/vendor/autoload.php' ) ) {
 
 // Initialize the plugin.
 $config = ConfigFactory::createSubConfig(
-	BN_TESTBED_DIR . '/config/defaults.php'
+	BN_TESTBED_DIR . '/config/defaults.php',
 	__NAMESPACE__
 );
 ( new Testbed( $config ) )->register();
